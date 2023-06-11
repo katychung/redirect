@@ -1,0 +1,346 @@
+body{
+  font-family: "Roboto", monospace;
+  background-color: #fff;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+/************Dark Mode************/
+
+.dark-mode {
+  background-color: #2F3942;
+  color: rgba(255, 252, 245, 0.8);
+}
+
+body.dark-mode .nav-container a {
+  color: rgba(255, 252, 245, 0.8);
+}
+
+.dark-mode thead{
+  background-color: #2F3942;
+  color: rgba(255, 252, 245, 0.8);
+  border: none;
+}
+
+.dark-mode td{
+  background-color: #2F3942;
+  color: rgba(255, 252, 245, 0.8);
+  border: none;
+}
+
+.dark-mode p{
+  color: rgba(255, 252, 245, 0.8);
+}
+
+.dark-mode h1{
+  color: rgba(255, 252, 245, 0.8);
+}
+
+.dark-mode .project-list{
+  background-color: rgba(44, 53, 61, 0.0);
+}
+
+.dark-mode .project-list:hover{
+  background-color: rgba(44, 53, 61, 0.8);
+}
+
+/************End Dark Mode************/
+
+
+/************Table************/
+
+thead{
+  background-color: #fff;
+  color: rgba(51, 51, 51, 0.8);
+  border: none;
+  font-family: "Roboto", monospace;
+  font-size:1.4em;
+  font-weight: 700;
+}
+
+td{
+  background-color: #fff;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+tbody{
+  border: none;
+}
+/************Table end************/
+
+
+
+h1{
+  font-family: "Roboto", monospace;
+	font-size:1.4em;
+  font-weight: 700;
+}
+
+h2{
+	font-size:1.2em;
+  font-weight: 700;
+}
+
+h3{
+	font-size:1.2em;
+}
+
+h4{
+	font-size:1.1em;
+}
+
+p, br {
+  font-family: "Roboto", monospace;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+
+ul li{
+  font-size: 1.1em;
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+.nav-container ul li::before {
+  /*font-size: 1.1em;*/
+  list-style: none;
+  content: '';
+}
+
+.hero h1{
+  font-family: "Roboto", monospace;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.hero{
+  margin-top: 20%;
+  margin-bottom: 17%;
+}
+
+/*************Links*************/
+
+a:link, a:active, a:visited{
+  color: #D94F23;
+  text-decoration: underline;
+}
+
+a:hover{
+  color: #666;
+}
+
+.project-list a:link, a:active, a:visited{
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+
+/*************End Links*************/
+
+/*************Nav*************/
+
+
+.nav-container{
+  /*box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;*/
+  font-weight: 700;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.8);
+  padding-right: 20px;
+  padding-top: 10px;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60em;
+}
+
+
+.nav-left{
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: left;
+  width: 50%;
+  float: left;
+  display: block;
+
+}
+.nav-right{
+  /*width: 50%;*/
+  text-align: right;
+}
+
+.blur{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.dark-mode .nav-container{  
+  background-color: #2F3942;
+  background-blend-mode: darken;
+  background-color: rgba(47, 57, 66, 0.8);
+}
+
+
+.nav-container li{
+  float: left;
+  padding: 0rem 0.5rem;
+  list-style-type: none;
+}
+
+.nav-container li:first-child{
+  float: left;
+  padding-left: 0rem;
+}
+
+/*.nav-container a:link, a:active, a:visited{
+  color: rgba(51, 51, 51, 0.8);
+  text-decoration: none;
+  display: block;
+}*/
+
+.nav-container a:link, a:active, a:visited{
+  /*color: rgba(217, 79, 35, 0.8);*/
+  text-decoration: none;
+}
+
+.nav-container a:link.currentLink, 
+.nav-container a:active.currentLink, 
+.nav-container a:visited.currentLink{
+  /*color: rgba(51, 51, 51, 0.8);*/
+  border-bottom: 4px #D94F23 solid;
+  /*display: block;*/
+}
+
+/*************End Nav*************/
+
+
+
+
+/*************Buttons*************/
+
+
+.btn-toggle{
+  background-color: rgba(238, 238, 238, 0);
+  /*border: solid 1px #fff;*/
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.btn-toggle:hover{
+  background-color: rgba(238, 238, 238, 0.4);
+}
+
+.dark-mode .btn-toggle{
+  /*background-color: grey;*/
+  /*border: solid 1px #fff;*/
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgba(255, 252, 245, 0.8);
+  background-color: rgba(44, 53, 61, 0.0);
+}
+
+.dark-mode .btn-toggle:hover{
+  background-color: rgba(44, 53, 61, 0.8);
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/*************Page Layout*************/
+
+.project-list{
+  background-color: rgba(238, 238, 238, 0.0);
+}
+
+.project-list:hover{
+  background-color: rgba(238, 238, 238, 0.4);
+}
+
+.whitespace {
+  /*border-radius: 8px;*/
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.first { 
+  margin-top: 0 !important;
+}
+
+.last { 
+  margin-bottom: 0 !important; 
+}
+
+.footer-nav{
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+/*************End Text styles*************/
+
+/*************Text styles*************/
+.caption{
+  font-size: 0.9em;
+  color: #333;
+}
+
+.text-center{
+  position: relative;
+  text-align: center;
+}
+
+.grid-container{
+  max-width:60rem;
+/*  padding-left: 0.625rem;
+  padding-right: 0.625rem;*/
+}
+
+.section-title{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: circle;
+  /*margin: 0;*/
+  padding: 0;
+  /*overflow: hidden;*/
+  line-height: 2;
+}
